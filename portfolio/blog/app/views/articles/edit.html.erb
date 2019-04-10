@@ -1,0 +1,13 @@
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="input-field col s12" style="margin-top: 10%;">
+        <%= form_for @article do |f|  %>
+          <label class="active" for="first_name2">本文</label>
+          <%= f.text_area :text %>
+          <%= f.submit "送信", class: "btn" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</main>
