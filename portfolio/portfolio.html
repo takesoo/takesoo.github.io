@@ -8,36 +8,34 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Playfair+Display" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <title>Portfolio</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
-      <a class="navbar-brand" href="navbar">takesoo's Portfolio</a>
+  <body style="font-family: 'Noto Serif JP', serif;">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id="navbar">
+      <a class="navbar-brand" href="#top">takesoo's Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="#photos">Photos</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown03">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#profile">Profile</a>
           </li>
         </ul>
       </div>
@@ -45,15 +43,15 @@
 
     <div class="container bg-light">
 
-      <div class="products py-5">
-        <h1 class="title">Products</h1>
+      <div class="products py-5 mt-5" id="products">
+        <h1 class="title ">Products</h1>
         <div class="row py-3">
           <div class="col-md-6">
             <div class="card">
               <img src="./image/products/pictweet.png" class="card-img-top" alt="pictweet">
               <div class="card-body">
                 <h4 class="card-title">Pictweet</h4>
-                <p class="card-text">プログラミングスクールで作ったSNSアプリケーション<br>使用言語 : Ruby on Rails, HTML5, CSS3</p>
+                <p class="card-text" style="font-family: 'Noto Serif JP', serif;">プログラミングスクールで作ったSNSアプリケーション<br>使用言語 : Ruby on Rails, HTML5, CSS3</p>
               </div>
             </div>
           </div>
@@ -62,14 +60,14 @@
               <img src="./image/products/blog.png" class="card-img-top" alt="blog">
               <div class="card-body">
                 <h4 class="card-title">blog</h4>
-                <p class="card-text">デザインから自作したブログアプリケーション<br>使用言語 : Ruby on Rails, HTML5, CSS3, materialize css</p>
+                <p class="card-text" style="font-family: 'Noto Serif JP', serif;">デザインから自作したブログアプリケーション<br>使用言語 : Ruby on Rails, HTML5, CSS3, materialize css</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="skills py-5">
+      <div class="skills py-5" id="skills">
         <h1 class="title">Skills</h1>
         <div class="row py-3">
           <div class="col offset-md-1 py-3">
@@ -108,7 +106,7 @@
         </div>
       </div>
 
-      <div class="photos py-5">
+      <div class="photos py-5" id="photos">
         <h1 class="title">Photos</h1>
         <div id="carouselExampleInterval" class="carousel slide py-3" data-ride="carousel">
           <div class="carousel-inner">
@@ -142,38 +140,38 @@
         </div>
       </div>
 
-      <div class="profile py-5">
+      <div class="profile py-5" id="profile">
         <h1 class="title">Profile</h1>
         <div class="row py-3">
-          <div class="col-5">
+          <div class="col-md-5 col-xs-12 mb-5">
             <div class="prf_img text-center">
               <img src="./image/profile/profile.png" alt="profile.png">
             </div>
             <div class="text-center">
-                <a href="https://twitter.com/htk_programmi" class="btn btn-primary btn-sm active mt-3" role="button" aria-pressed="true">
+                <a href="https://twitter.com/htk_programmi" class="btn btn-sm text-white active mt-3" role="button" aria-pressed="true" style="background-color: #55acee;">
                   <i class="fab fa-twitter"></i>
                   Twitter
                 </a>
-                <a href="https://twitter.com/htk_programmi" class="btn btn-primary btn-sm active mt-3" role="button" aria-pressed="true">
+                <a href="https://www.facebook.com/takesooon" class="btn text-white btn-sm active mt-3" role="button" aria-pressed="true" style="background-color: #3B5998">
                   <i class="fab fa-facebook-f"></i>
                   Facebook
                 </a>
-                <a href="https://twitter.com/htk_programmi" class="btn btn-primary btn-sm active mt-3" role="button" aria-pressed="true">
+                <a href="https://github.com/takesoo/takesoo.github.io" class="btn btn-dark btn-sm active mt-3" role="button" aria-pressed="true">
                   <i class="fab fa-github"></i>
                   GitHub
                 </a>
             </div>
           </div>
-          <div class="col-7">
+          <div class="col-md-7 col-xs-12">
             <table class="table">
-              <tbody>
+              <tbody style="font-size: 14px; font-family: 'Noto Serif JP', serif;">
                 <tr>
                   <td scope="row">1989年</td>
                   <td>兵庫県三田市に生まれる。</td>
                 </tr>
                 <tr>
                   <td scope="row">2002年</td>
-                  <td>中学生で「キノの旅」という小説を読み旅人に憧れを持つようになる。</td>
+                  <td>中学生で「キノの旅」という小説を読み、自立していて自由な旅人に憧れを持つようになる。</td>
                 </tr>
                 <tr>
                   <td scope="row">2009年</td>
@@ -189,7 +187,7 @@
                 </tr>
                 <tr>
                   <td scope="row">2017年</td>
-                  <td>大手医薬品メーカーに再就職するも、保守保全、維持管理を旨とする製造業の仕事に退屈さを覚える。</td>
+                  <td>大手医薬品メーカーに再就職するも、保守保全、維持管理を旨とする製造業の仕事に退屈さと窮屈さを覚える。</td>
                 </tr>
                 <tr>
                   <td scope="row">2019年</td>
@@ -200,8 +198,13 @@
           </div>
         </div>
       </div>
-
     </div>
+
+    <footer class="footer bg-dark">
+      <div class="container text-center">
+        <small class="text-white font-weight-light">©️ takesoo 2019</small>
+      </div>
+    </footer>
 
 
     <!-- Optional JavaScript -->
